@@ -57,7 +57,7 @@ function js() {
   return gulp
     .src('./js/sb-admin-2.js')
     .pipe(header(banner))
-    .pipe(gulp.dest(".dist/js"))
+    .pipe(gulp.dest("dist/js"))
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
